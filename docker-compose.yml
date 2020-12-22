@@ -34,10 +34,10 @@ services:
       - default
       - other-containers
     logging:
-      driver: json-file
+      driver: "json-file"
       options:
-        max-size: 200k
-        max-file: 10
+        max-size: "200k"
+        max-file: "10"
 
   nginx-letsencrypt:
     image: jrcs/letsencrypt-nginx-proxy-companion:latest
@@ -58,10 +58,10 @@ services:
       - default
       - other-containers
     logging:
-      driver: json-file
+      driver: "json-file"
       options:
-        max-size: 200k
-        max-file: 10
+        max-size: "200k"
+        max-file: "10"
 
 networks:
   default:
